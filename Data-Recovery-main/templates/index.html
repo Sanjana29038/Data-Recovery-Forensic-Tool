@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Data Forensic Tool</h1>
+    </header>
+    <main>
+        <section class="module">
+            <h2>Applications</h2>
+            <button onclick="retrieveDiscordData()">Retrieve Discord Data</button>
+            <pre id="output-discord" class="output-box"></pre>
+        </section>
+
+        <section class="module">
+            <h2>Browsers</h2>
+            <button onclick="retrieveBookmarks()">Retrieve Bookmarks</button>
+            <pre id="output-bookmarks" class="output-box"></pre>
+        </section>
+
+        <section class="module">
+            <h2>Browsing History</h2>
+            <button onclick="retrieveBrowsingHistory()">Retrieve Browsing History</button>
+            <pre id="output-browsing-history" class="output-box"></pre>
+        </section>
+
+        <section class="module">
+            <h2>Network Details</h2>
+            <button onclick="retrieveNetworkDetails()">Retrieve Network Details</button>
+            <pre id="output-network-details" class="output-box"></pre>
+        </section>
+
+        <section class="module">
+            <h2>WiFi Passwords</h2>
+            <button onclick="retrieveWifiPasswords()">Retrieve WiFi Passwords</button>
+            <pre id="output-wifi-passwords" class="output-box"></pre>
+        </section>
+
+        <section class="module">
+            <h2>System Information</h2>
+            <button onclick="retrieveSystemInfo()">Retrieve System Info</button>
+            <pre id="output-system-info" class="output-box"></pre>
+        </section>
+
+        <section class="module">
+            <h2>Wallets</h2>
+            <button onclick="retrieveWalletData()">Retrieve Wallet Data</button>
+            <pre id="output-wallet-data" class="output-box"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Project Dashboard</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
